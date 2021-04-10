@@ -18,7 +18,7 @@ Environment=MINER_API_INFO="eyJhXXXXXXXX2dr0:/ip4/10.1.1.11/tcp/30731/http"
 Environment=LOTUS_WORKER_PATH="/data-u2/c2/%i"
 Environment=TMPDIR=${LOTUS_WORKER_PATH}/tmp
 ## !!! CHANGE IT !!!
-Environment=WORKER_PORT=50771
+Environment=WORKER_PORT="$((50771 + %i))"
 ## !!! CHANGE IT !!!
 Environment=WORKER_IP=10.1.1.31
 Environment=TRUST_PARAMS=1
