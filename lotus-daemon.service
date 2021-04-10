@@ -15,7 +15,6 @@ ExecStart=${BIN_DIR}/lotus daemon
 Restart=always
 RestartSec=10
 
-
 ## !!! CHANGE IT !!!
 User=lts
 Group=lts
