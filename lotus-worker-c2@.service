@@ -16,7 +16,7 @@ Environment=IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com
 ## !!! CHANGE IT !!!
 Environment=MINER_API_INFO="eyJhXXXXXXXX2dr0:/ip4/10.1.1.11/tcp/30731/http"
 Environment=LOTUS_WORKER_PATH="/data-u2/c2/%i"
-Environment=TMPDIR=${LOTUS_WORKER_PATH}/tmp
+Environment=TMPDIR="${LOTUS_WORKER_PATH}/tmp"
 ## !!! CHANGE IT !!!
 Environment=WORKER_PORT="$((50771 + %i))"
 ## !!! CHANGE IT !!!
@@ -32,7 +32,6 @@ Environment=BIN_DIR="/data-u2/mainnet/bin"
 ExecStart=${BIN_DIR}/lotus-worker run --listen ${WORKER_IP}:${WORKER_PORT} --addpiece=false --precommit1=false --precommit2=false --commit=true
 Restart=always
 RestartSec=10
-
 
 ## !!! CHANGE IT !!!
 User=lts
