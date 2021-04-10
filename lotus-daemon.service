@@ -12,7 +12,7 @@ Environment=IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com
 Environment=LOTUS_PATH="/data-u2/mainnet/chain/master"
 Environment=BIN_DIR="/data-u2/mainnet/bin"
 ExecStart=${BIN_DIR}/lotus daemon
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 ## !!! CHANGE IT !!!

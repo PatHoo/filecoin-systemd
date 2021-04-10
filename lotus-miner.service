@@ -22,7 +22,7 @@ Environment=RUST_LOG=info
 Environment=BIN_DIR="/data-u2/mainnet/bin"
 ExecStart=${BIN_DIR}/lotus-miner run
 LimitNOFILE=1048576
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 ## !!! CHANGE IT !!!

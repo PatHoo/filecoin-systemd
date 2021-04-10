@@ -30,7 +30,7 @@ Environment=FIL_PROOFS_USE_MULTICORE_SDR=1
 Environment=FIL_PROOFS_MULTICORE_SDR_PRODUCERS=1
 Environment=BIN_DIR="/data-u2/mainnet/bin"
 ExecStart=${BIN_DIR}/lotus-worker run --listen ${WORKER_IP}:${WORKER_PORT} --addpiece=true --precommit1=true --precommit2=false --commit=false
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 ## !!! CHANGE IT !!!
