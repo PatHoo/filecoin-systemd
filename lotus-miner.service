@@ -12,7 +12,7 @@ Environment=FIL_PROOFS_PARENT_CACHE="/data-param/mainnet/filecoin-parents"
 Environment=FIL_PROOFS_PARAMETER_CACHE="/data-param/mainnet/filecoin-proof-parameters"
 Environment=IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs"
 Environment=LOTUS_MINER_PATH="~/Filecoin/minerrepo"
-Environment=TMPDIR=${LOTUS_MINER_PATH}/tmp
+Environment=TMPDIR="${LOTUS_MINER_PATH}/tmp"
 ## !!! CHANGE IT !!!
 ## On your lotus-daemon machine, $(lotus auth api-info --perm admin)
 ## !!! CHANGE IT !!!
@@ -24,7 +24,6 @@ ExecStart=${BIN_DIR}/lotus-miner run
 LimitNOFILE=1048576
 Restart=always
 RestartSec=10
-
 
 ## !!! CHANGE IT !!!
 User=lts
