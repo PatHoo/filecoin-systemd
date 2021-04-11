@@ -1,6 +1,7 @@
 [Unit]
 Description=Lotus Worker P2
 After=network.target
+PartOf=lotus-worker-p2s.target
 ## Only if lotus-miner and lotus-worker on the same machine
 #After=lotus-miner.service
 #Wants=lotus-miner.service
